@@ -12,19 +12,19 @@ import android.view.View;
 
 public class Graph4 extends Activity 
 {
-	    //’Ç‰Á•ª
+	    //ï¿½Ç‰ï¿½ï¿½ï¿½
 	    private int a;
-		private int b;
-		private int d;
+ã€€ã€€ã€€ã€€ã€€ã€€private int b;
+	ã€€ã€€private int d;
 
-		public void onCreate(Bundle savedInstanceState) 
+ã€€ã€€ã€€ã€€ã€€ã€€public void onCreate(Bundle savedInstanceState) 
 	    {
 	    super.onCreate(savedInstanceState);
 
 	    DrawView view = new DrawView(getApplication());
 	    setContentView(view);
 	    
-	    //’Ç‰Á•ª
+	    //ï¿½Ç‰ï¿½ï¿½ï¿½
 	    //Bundle extras=getIntent().getExtras();
 	    //if (extras!=null) 
 	    //{
@@ -46,27 +46,27 @@ class DrawView extends View
 	    super(context);
 	  }
 	  
-	//ƒtƒB[ƒ‹ƒh:“Š•[”
+	ã€€ã€€ã€€ã€€//ï¿½tï¿½Bï¿½[ï¿½ï¿½ï¿½h:ï¿½ï¿½ï¿½[ï¿½ï¿½
 		int a;
 		int b;
 		int d;
 		
 				
-		//ƒtƒB[ƒ‹ƒhF‰~üŠp
+		//ï¿½tï¿½Bï¿½[ï¿½ï¿½ï¿½hï¿½Fï¿½~ï¿½ï¿½ï¿½p
 		private int agr;
 		private int dis;
 		private int ind;
 		private int mid;
 		
 	    		
-		//“Š•[”E–ß‚è’l2
+		//ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Eï¿½ß‚ï¿½ï¿½l2
 		int getA(){a = 4; return a;}
-        int getB(){b = 2; return b;}
+        ã€€ã€€ã€€ã€€int getB(){b = 2; return b;}
 		int getD(){d = 2; return d;}
 		
 		int getAgr()
 		{
-			//–ß‚è’l2
+			//ï¿½ß‚ï¿½ï¿½l2
 			int a = getA();
 			int b = getB();
 			int d = getD();
@@ -77,7 +77,7 @@ class DrawView extends View
 		
 		int getDis()
 		{
-			//–ß‚è’l
+			//ï¿½ß‚ï¿½ï¿½l
 			int a = getA();
 			int b = getB();
 			int d = getD();
@@ -94,23 +94,23 @@ class DrawView extends View
 		
 		int getMid()
 		{
-			//–ß‚è’l
-			int a = getA();
-			int b = getB();
-			int d = getD();
+		//ï¿½ß‚ï¿½ï¿½l
+		int a = getA();
+		int b = getB();
+		int d = getD();
 			
-			mid = 360*d/(a+b+d);
-		    return mid;
+		mid = 360*d/(a+b+d);
+		return mid;
 		}
 	  
 	  public void onDraw(Canvas c)
 	  {
 	    
-		//‰~üŠp:–ß‚è’l
+		//ï¿½~ï¿½ï¿½ï¿½p:ï¿½ß‚ï¿½ï¿½l
 		int agr= getAgr();
 		int dis= getDis();
-        int ind= getInd();
-	    int mid= getMid();
+        ã€€ã€€ã€€ã€€int ind= getInd();
+	    ã€€ã€€int mid= getMid();
 		       
 		c.drawColor(Color.WHITE);
 	    
@@ -120,7 +120,7 @@ class DrawView extends View
 	    paint.setAntiAlias(true);
 	    
 	    	    
-	    //ƒOƒ‰ƒt•`‰æ
+	    //ï¿½Oï¿½ï¿½ï¿½tï¿½`ï¿½ï¿½
 	    paint.setStyle(Paint.Style.FILL);
 	    paint.setColor(Color.RED);
 	    c.drawArc(new RectF(10.0f,10.0f,200.0f,150.0f), 0, agr, true, paint);
@@ -133,15 +133,15 @@ class DrawView extends View
         int b = getB();
         int d = getD();
 	    
-	    //Œ‹‰Ê•\¦
+	    //ï¿½ï¿½ï¿½Ê•\ï¿½ï¿½
         paint.setColor(Color.BLACK);
-        c.drawText("“Š•[Œ‹‰Ê", 280, 80, paint);
+        c.drawText("ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½", 280, 80, paint);
         paint.setColor(Color.RED);
-        c.drawText("^¬"+a,280,100,paint);
+        c.drawText("ï¿½^ï¿½ï¿½"+a,280,100,paint);
         paint.setColor(Color.BLUE);
-        c.drawText("”½‘Î"+b,280,120,paint);
+        c.drawText("ï¿½ï¿½ï¿½ï¿½"+b,280,120,paint);
         paint.setColor(Color.GRAY);
-        c.drawText("–³“Š•["+d,280,140,paint);
+        c.drawText("ï¿½ï¿½ï¿½ï¿½ï¿½["+d,280,140,paint);
 	    
 	      
 	  }
