@@ -142,8 +142,8 @@ class SampleView extends View
 	   //•`‰æ•û–@‚Ìİ’è
 	   Paint p = new Paint();
 	   p.setColor(Color.BLACK);
-       p.setStyle(Paint.Style.FILL);
-       p.setStrokeWidth(8);
+           p.setStyle(Paint.Style.FILL);
+           p.setStrokeWidth(8);
        
        //‰~‚Ì•`‰æ
        cs.drawCircle( x, y, 50, p);
