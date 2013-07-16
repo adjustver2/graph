@@ -6,9 +6,9 @@ import android.graphics.Paint;
 
 public class Player extends Task {
 	final static float SIZE = 20;		//自機の大きさ
-	private Circle _cir = null;			//自機の円
-	private Paint _paint = new Paint();	//描画設定
-	static Vec _vec = new Vec();		//自機の移動ベクトル
+	static Circle _cir = null;			//自機の円
+	static Paint _paint = new Paint();	//描画設定
+	private Vec _vec = new Vec();		//自機の移動ベクトル
 	
 	public Player(){
 		_cir = new Circle( 240, 0, SIZE );	//(240,0)の位置にSIZEの大きさの円を作る
