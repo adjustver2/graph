@@ -8,7 +8,7 @@ public class Player extends Task
 {
 	private final static float MAX_SPEED = 15;		//移動する最大スピード
 	private final static float SIZE = 30;			//自機の大きさ
-	private Circle _cir = null;			//自機の円
+	static Circle _cir = null;			//自機の円
 	private Paint _paint = new Paint();	//描画設定
 	private Vec _vec     = new Vec();	//自機の移動ベクトル
 	private Vec _sensorVec = new Vec();	//センサーのベクトル

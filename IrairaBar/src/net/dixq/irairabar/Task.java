@@ -4,7 +4,12 @@ import android.graphics.Canvas;
 
 public abstract class Task {
 
-	public boolean onUpdate(){
+	public boolean onUpdate()
+	{
+		if(IrairaBarActivity.st==1)
+		{
+			return false;
+		}
 		return true;
 	}
 	

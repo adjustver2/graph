@@ -5,6 +5,7 @@ import java.util.LinkedList;
 
 import net.dixq.irairabar.Barricade.eType;
 
+import android.app.Activity;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -71,6 +72,7 @@ public class GameMgr {
 		_taskList.add(new FpsController());
 	}
 
+	@SuppressWarnings("incomplete-switch")
 	private boolean Collision(){
 		Vec vec = new Vec();
 		final Circle cir = _player.getPt();
@@ -88,8 +90,15 @@ public class GameMgr {
 		return false;
 	}
 	
+
+	
 	public boolean onUpdate() {
-		if( _status != eStatus.NORMAL ){
+		if( _status != eStatus.NORMAL )
+		{
+		    if(IrairaBarActivity.st==1)
+		    {
+		    	return true;
+		    }
 			return true;
 		}
 		if( Collision() ){
